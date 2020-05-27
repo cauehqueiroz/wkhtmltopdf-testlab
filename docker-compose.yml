@@ -1,0 +1,9 @@
+version: '3'
+services:
+  wkserver:
+    container_name: wkserver
+    image: oberonamsterdam/wkhtmltopdf
+    volumes:
+      - ./:/app
+    ports:
+      - 8000:80
